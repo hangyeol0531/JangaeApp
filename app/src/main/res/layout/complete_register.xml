@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="204dp"
+        android:layout_height="156dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        android:layout_weight="1"
+        android:src="@drawable/nobackicon" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="가입을 축하드립니다."
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/login" />
+
+
+
+</LinearLayout>
