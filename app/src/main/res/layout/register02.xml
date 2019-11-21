@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -30,7 +30,7 @@
                 android:textColor="#000000"
                 android:textSize="45dp"
                 android:textStyle="bold"
-                 />
+                />
         </TableRow>
     </TableLayout>
 
@@ -85,16 +85,8 @@
         android:textSize="30dp"
         />
 
-    <Spinner
-        android:layout_marginTop="30dp"
-        android:id="@+id/spinner1"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:layout_height="35dp"
-        android:entries="arrary/jang"/>
-
     <Button
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:layout_gravity="center"
         android:id="@+id/register"
         android:layout_width="170dp"

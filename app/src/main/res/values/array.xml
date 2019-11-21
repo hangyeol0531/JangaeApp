@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-arr name = "jang">
+        <item>지체장애인</item>
+        <item>뇌병변장애인</item>
+        <item>시각장애인</item>
+        <item>청각장애인</item>
+        <item>언어장애인</item>
+        <item>지적장애인</item>
+        <item>자폐성장애인</item>
+        <item>신장장애인</item>
+        <item>호흡기장애인</item>
+        <item>간장애인</item>
+        <item>안면장애인</item>
+        <item>장루·요루장애인</item>
+        <item>뇌전증장애인</item>
+    </string-arr>
+</resources>

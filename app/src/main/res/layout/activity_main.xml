@@ -28,6 +28,7 @@
             android:layout_height="match_parent" >
 
             <Button
+                android:id="@+id/login"
                 android:layout_width="165dp"
                 android:layout_height="47dp"
                 android:background="@drawable/login" />
@@ -39,6 +40,7 @@
             android:layout_height="match_parent" >
 
             <Button
+                android:id="@+id/register"
                 android:layout_width="170dp"
                 android:layout_height="47dp"
                 android:background="@drawable/sign_up" />
