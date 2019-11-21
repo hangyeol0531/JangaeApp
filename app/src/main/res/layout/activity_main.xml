@@ -4,23 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv1"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="95dp"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
         android:layout_weight="1"
-        app:srcCompat="@drawable/icon" />
+        android:src="@drawable/nobackicon" />
+
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:layout_width="165dp"
+                android:layout_height="47dp"
+                android:background="@drawable/login" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="47dp"
+                android:background="@drawable/sign_up" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
 
 </LinearLayout>
