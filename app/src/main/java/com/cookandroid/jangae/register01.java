@@ -20,6 +20,7 @@ public class register01 extends Activity {
             public void onClick(View view) {
                 Intent listViewIntent = new Intent(getApplicationContext(), completeActivity.class);
                 startActivity(listViewIntent);
+                finish();
             }
         });
     }

@@ -22,6 +22,9 @@
         <activity android:name=".loginActivity"></activity>
         <activity android:name=".register01"></activity>
         <activity android:name=".register02"></activity>
+        <activity android:name=".fl1"></activity>
+        <activity android:name=".fl2"></activity>
+        <activity android:name=".fl3"></activity>
     </application>
 
 </manifest>
