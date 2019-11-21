@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:orientation="vertical"
-            android:layout_marginBottom="130dp"
+            android:layout_marginBottom="215dp"
             >
             <ImageView
                 android:id="@+id/imageView3"
