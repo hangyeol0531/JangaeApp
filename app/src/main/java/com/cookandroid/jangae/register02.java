@@ -6,18 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class completeActivity extends Activity {
+public class register02 extends Activity {
     Button btn1;
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.complete_register);
+        setContentView(R.layout.register02);
 
-        btn1 = (Button)findViewById(R.id.login);
+        btn1 = (Button)findViewById(R.id.register);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent listViewIntent = new Intent(getApplicationContext(), loginActivity.class);
+                Intent listViewIntent = new Intent(getApplicationContext(), completeActivity.class);
                 startActivity(listViewIntent);
             }
         });

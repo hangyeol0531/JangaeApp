@@ -62,7 +62,7 @@
         android:layout_marginTop="50dp"
         android:ems="10"
         android:background="@drawable/round"
-        android:inputType="textMultiLine"
+        android:inputType="textPassword"
         android:hint="PW"
         android:textColorHint="#000000"
         android:textSize="30dp"
@@ -91,7 +91,7 @@
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="35dp"
-        android:entries="arrary/jang"/>
+        android:entries="@array/jang"/>
 
     <Button
         android:layout_marginTop="30dp"

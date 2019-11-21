@@ -19,6 +19,14 @@ public class MainActivity extends AppCompatActivity {
         btn1 = (Button)findViewById(R.id.login);
         btn2 = (Button)findViewById(R.id.register);
 
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent listViewIntent = new Intent(getApplicationContext(), loginActivity.class);
+                startActivity(listViewIntent);
+            }
+        });
+
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

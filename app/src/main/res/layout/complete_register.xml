@@ -30,6 +30,7 @@
         />
 
     <Button
+        android:id="@+id/login"
         android:layout_width="165dp"
         android:layout_height="45dp"
         android:layout_gravity="center"
