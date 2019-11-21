@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/nobackicon" />
+
+            <EditText
+                android:id="@+id/edid"
+                android:layout_width="270dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="10dp"
+                android:ems="10"
+                android:background="@drawable/round"
+                android:inputType="textMultiLine"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#93D6E6"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="80dp"
+            >
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/fs2"
+                />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/fs2"
+                />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="340dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="#FFFFFF"
+                android:src="@drawable/fs2"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="49dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@drawable/home" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@drawable/post" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@drawable/fas" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
