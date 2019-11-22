@@ -46,9 +46,9 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:orientation="vertical"
             android:layout_marginBottom="165dp"
+            android:layout_gravity="center"
             >
             <ImageView
                 android:id="@+id/imageView3"
@@ -84,7 +84,7 @@
     </LinearLayout>
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="49dp">
 
         <TableRow
@@ -94,23 +94,44 @@
             <Button
                 android:id="@+id/btn1"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:background="@drawable/home" />
+                android:background="#08BAD5"
+                android:textSize="20dp"
+
+                android:text="홈"
+                />
+            <View
+                android:background="#ffffff"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                />
 
             <Button
                 android:id="@+id/btn2"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:background="@drawable/post" />
+                android:background="#08BAD5"
+                android:textSize="20dp"
+                android:text="게시판"
+                />
+            <View
+                android:background="#ffffff"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                />
 
             <Button
                 android:id="@+id/btn3"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:background="@drawable/fas" />
+                android:background="#08BAD5"
+                android:textSize="20dp"
+
+                android:text="행사"
+                />
         </TableRow>
 
     </TableLayout>
