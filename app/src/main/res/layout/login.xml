@@ -35,7 +35,7 @@
     </TableLayout>
 
     <EditText
-        android:id="@+id/edid"
+        android:id="@+id/idEditText"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="55dp"
@@ -45,14 +45,13 @@
         android:layout_marginTop="130dp"
         android:ems="10"
         android:background="@drawable/round"
-        android:inputType="textMultiLine"
         android:hint="ID"
         android:textColorHint="#000000"
         android:textSize="30dp"
         />
 
     <EditText
-        android:id="@+id/edpw"
+        android:id="@+id/pwEditText"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="55dp"

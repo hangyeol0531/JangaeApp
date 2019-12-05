@@ -3,6 +3,7 @@ package com.cookandroid.jangae;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
@@ -21,7 +22,7 @@ public class register_job_checkActivity extends Activity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent listViewIntent = new Intent(getApplicationContext(), register01.class);
+                Intent listViewIntent = new Intent(register_job_checkActivity.this, register1.class);
                 startActivity(listViewIntent);
             }
         });
@@ -29,7 +30,7 @@ public class register_job_checkActivity extends Activity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent listViewIntent = new Intent(getApplicationContext(), register02.class);
+                Intent listViewIntent = new Intent(register_job_checkActivity.this, register2.class);
                 startActivity(listViewIntent);
             }
         });
@@ -37,7 +38,7 @@ public class register_job_checkActivity extends Activity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent listViewIntent = new Intent(getApplicationContext(), register02.class);
+                Intent listViewIntent = new Intent(register_job_checkActivity.this, register2.class);
                 startActivity(listViewIntent);
             }
         });

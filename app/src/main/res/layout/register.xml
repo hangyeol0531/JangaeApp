@@ -35,31 +35,45 @@
     </TableLayout>
 
     <EditText
-        android:id="@+id/edid"
+        android:id="@+id/namepwEditText"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:hint="Name"
+        android:paddingLeft="15dp"
+        android:textColorHint="#000000"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/idEditText"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:paddingLeft="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:background="@drawable/round"
-        android:inputType="textMultiLine"
         android:hint="ID"
         android:textColorHint="#000000"
         android:textSize="30dp"
         />
 
     <EditText
-        android:id="@+id/edpw"
+        android:id="@+id/pwEditText"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:paddingLeft="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:background="@drawable/round"
         android:inputType="textPassword"
@@ -69,18 +83,18 @@
         />
 
     <EditText
-        android:id="@+id/edname"
+        android:id="@+id/repwEditText"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:paddingLeft="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
+        android:inputType="textPassword"
         android:background="@drawable/round"
-        android:inputType="textMultiLine"
-        android:hint="Name"
+        android:hint="RE PW"
         android:textColorHint="#000000"
         android:textSize="30dp"
         />
@@ -93,10 +107,12 @@
         android:layout_height="35dp"
         android:entries="@array/jang"/>
 
+
+
     <Button
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:id="@+id/register"
+        android:id="@+id/registername"
         android:layout_width="170dp"
         android:layout_height="47dp"
         android:background="@drawable/gaep" />

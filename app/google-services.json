@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1079512683595",
+    "firebase_url": "https://jangae-d8a5d.firebaseio.com",
+    "project_id": "jangae-d8a5d",
+    "storage_bucket": "jangae-d8a5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079512683595:android:38e76d0e8f845fd94529ce",
+        "android_client_info": {
+          "package_name": "com.cookandroid.jangae"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079512683595-akmbboa5ieghapl2u66c8iuu17r8usqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR_6YSYZr4OtkJWyWfUjlpa6Icfq12HyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079512683595-akmbboa5ieghapl2u66c8iuu17r8usqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

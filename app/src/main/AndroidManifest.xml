@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cookandroid.jangae">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -20,8 +21,8 @@
         <activity android:name=".register_job_checkActivity"></activity>
         <activity android:name=".completeActivity"></activity>
         <activity android:name=".loginActivity"></activity>
-        <activity android:name=".register01"></activity>
-        <activity android:name=".register02"></activity>
+        <activity android:name=".register1"></activity>
+        <activity android:name=".register2"></activity>
         <activity android:name=".fl1"></activity>
         <activity android:name=".fl2"></activity>
         <activity android:name=".fl3"></activity>
