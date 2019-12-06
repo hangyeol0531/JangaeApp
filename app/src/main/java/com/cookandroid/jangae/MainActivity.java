@@ -10,6 +10,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button btn1, btn2;
+    Button jump;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn1 = (Button)findViewById(R.id.login);
         btn2 = (Button)findViewById(R.id.register);
+        jump = (Button)findViewById(R.id.jump);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,5 +38,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(listViewIntent);
             }
         });
+
+        jump.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent listViewIntent = new Intent(getApplicationContext(), fl1.class);
+                startActivity(listViewIntent);
+            }
+        });
+
     }
 }
