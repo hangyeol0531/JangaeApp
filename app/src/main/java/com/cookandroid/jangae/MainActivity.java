@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         jump.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent listViewIntent = new Intent(getApplicationContext(), fl1.class);
+                Intent listViewIntent = new Intent(getApplicationContext(), addinformation.class);
                 startActivity(listViewIntent);
             }
         });

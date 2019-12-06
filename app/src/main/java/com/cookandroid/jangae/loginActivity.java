@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class loginActivity extends Activity {
-    Button btn1;
+    Button btn1, btn2;
     private static final String TAG = "login Activity";
     private FirebaseAuth mAuth;
     @Override
@@ -37,14 +37,14 @@ public class loginActivity extends Activity {
         public void onClick(View v){
             switch (v.getId()){
                 case R.id.login:
-                    singup();
+                    login();
                     Log.e("클릭", "클릭");
                     break;
             }
         }
     };
 
-    private void singup(){
+    private void login(){
         String email = ((EditText)findViewById(R.id.idEditText)).getText().toString().trim();
         String password = ((EditText)findViewById(R.id.pwEditText)).getText().toString().trim();
         if(password.length() > 0 && email.length() > 0) {

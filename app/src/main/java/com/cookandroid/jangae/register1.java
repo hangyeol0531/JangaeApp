@@ -20,10 +20,13 @@ public class register1 extends Activity {
     Button btn1;
     private static final String TAG = "register Activity";
     private FirebaseAuth mAuth;
+    private String position;
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.register);
+        Intent intent = getIntent();
+        position = intent.getStringExtra("position");
         mAuth = FirebaseAuth.getInstance();
         btn1 = findViewById(R.id.registername);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -32,20 +35,12 @@ public class register1 extends Activity {
                 signup();
             }
         });
-    }
-    @Override
-    public void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+
     }
     private void signup(){
-        Log.d("싸발", "싸발");
         String email = ((EditText)findViewById(R.id.idEditText)).getText().toString().trim();
-        Log.d("야발1", "야발1");
         String password = ((EditText)findViewById(R.id.pwEditText)).getText().toString().trim();
-        Log.d("야발2", "야발2");
         String repassword = ((EditText)findViewById(R.id.repwEditText)).getText().toString().trim();
-        Log.d("야발", "야발");
         if(password.length() > 0 && repassword.length() > 0 && email.length() > 0) {
             if (password.equals(repassword)) {
                 mAuth.createUserWithEmailAndPassword(email, password)
@@ -54,9 +49,10 @@ public class register1 extends Activity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
-                                    spreadmsg("회원가입이 성공적입니다.");
+                                    spreadmsg("정보입력창으로 이동합니다.");
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    Intent listViewIntent = new Intent(register1.this, completeActivity.class);
+                                    Intent listViewIntent = new Intent(register1.this, addinformation.class);
+                                    listViewIntent.putExtra("position",position);
                                     startActivity(listViewIntent);
                                     finish();
                                     //성공 했을때 로직

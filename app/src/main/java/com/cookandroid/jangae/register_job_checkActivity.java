@@ -23,6 +23,7 @@ public class register_job_checkActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent listViewIntent = new Intent(register_job_checkActivity.this, register1.class);
+                listViewIntent.putExtra("position","장애인");
                 startActivity(listViewIntent);
             }
         });
@@ -31,6 +32,7 @@ public class register_job_checkActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent listViewIntent = new Intent(register_job_checkActivity.this, register2.class);
+                listViewIntent.putExtra("position","보호자");
                 startActivity(listViewIntent);
             }
         });
@@ -39,6 +41,7 @@ public class register_job_checkActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Intent listViewIntent = new Intent(register_job_checkActivity.this, register2.class);
+                listViewIntent.putExtra("position","상담사");
                 startActivity(listViewIntent);
             }
         });

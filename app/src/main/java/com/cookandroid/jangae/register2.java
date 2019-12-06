@@ -20,10 +20,15 @@ public class register2 extends Activity {
     Button btn1;
     private static final String TAG = "register Activity";
     private FirebaseAuth mAuth;
+    private String position;
+
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.register02);
+        Intent intent = getIntent();
+        position = intent.getStringExtra("position");
+
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
         btn1 = findViewById(R.id.register);
@@ -33,11 +38,7 @@ public class register2 extends Activity {
                 singup();
             }
         });
-    }
-    @Override
-    public void onStart() {
-        super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+
     }
 
     private void singup(){
@@ -52,9 +53,10 @@ public class register2 extends Activity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
-                                    spreadmsg("회원가입이 성공적입니다.");
+                                    spreadmsg("정보입력창으로 이동합니다.");
                                     FirebaseUser user = mAuth.getCurrentUser();
-                                    Intent listViewIntent = new Intent(getApplicationContext(), completeActivity.class);
+                                    Intent listViewIntent = new Intent(getApplicationContext(), addinformation.class);
+                                    listViewIntent.putExtra("position",position);
                                     startActivity(listViewIntent);
                                     finish();
                                     //성공 했을때 로직

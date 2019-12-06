@@ -35,21 +35,6 @@
     </TableLayout>
 
     <EditText
-        android:id="@+id/namepwEditText"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/round"
-        android:ems="10"
-        android:hint="Name"
-        android:paddingLeft="15dp"
-        android:textColorHint="#000000"
-        android:textSize="30dp" />
-
-    <EditText
         android:id="@+id/idEditText"
         android:layout_gravity="center"
         android:layout_width="300dp"
