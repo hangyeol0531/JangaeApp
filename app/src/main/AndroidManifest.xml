@@ -29,7 +29,8 @@
         <activity android:name=".fl2"></activity>
         <activity android:name=".fl3"></activity>
         <activity android:name=".addinformation"></activity>
-
+        <activity android:name=".sangdam"></activity>
+        <activity android:name=".boho"></activity>
     </application>
 
 </manifest>

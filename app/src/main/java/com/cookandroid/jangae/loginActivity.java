@@ -75,11 +75,11 @@ public class loginActivity extends Activity {
                                                     startActivity(listViewIntent);
                                                 }
                                                 else if(datastring.equals("보호자")){
-                                                    Intent listViewIntent = new Intent(getApplicationContext(), fl2.class);
+                                                    Intent listViewIntent = new Intent(getApplicationContext(), boho.class);
                                                     listViewIntent.putExtra("name",name);
                                                     startActivity(listViewIntent);
                                                 }else if(datastring.equals("상담사")){
-                                                    Intent listViewIntent = new Intent(getApplicationContext(), fl3.class);
+                                                    Intent listViewIntent = new Intent(getApplicationContext(), sangdam.class);
                                                     listViewIntent.putExtra("name",name);
                                                     startActivity(listViewIntent);
                                                 }
