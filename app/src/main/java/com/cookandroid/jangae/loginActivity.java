@@ -23,6 +23,7 @@ public class loginActivity extends Activity {
     private static final String TAG = "login Activity";
     private FirebaseAuth mAuth;
     private String datastring;
+    private String name;
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
@@ -65,7 +66,23 @@ public class loginActivity extends Activity {
                                             DocumentSnapshot document = task.getResult();
                                             if (document.exists()) {
                                                 Log.d(TAG, "DocumentSnapshot data: " + document.getData().get("position"));
-                                                //datastring = document.getData().getString("position");
+                                                datastring = (String) document.getData().get("position").toString().trim();
+                                                name = (String) document.getData().get("name").toString().trim();
+                                                Log.d("Tag", datastring);
+                                                if(datastring.equals("장애인")){
+                                                    Intent listViewIntent = new Intent(getApplicationContext(), fl1.class);
+                                                    listViewIntent.putExtra("name",name);
+                                                    startActivity(listViewIntent);
+                                                }
+                                                else if(datastring.equals("보호자")){
+                                                    Intent listViewIntent = new Intent(getApplicationContext(), fl2.class);
+                                                    listViewIntent.putExtra("name",name);
+                                                    startActivity(listViewIntent);
+                                                }else if(datastring.equals("상담사")){
+                                                    Intent listViewIntent = new Intent(getApplicationContext(), fl3.class);
+                                                    listViewIntent.putExtra("name",name);
+                                                    startActivity(listViewIntent);
+                                                }
                                             } else {
                                                 Log.d(TAG, "No such document");
                                             }
@@ -74,11 +91,6 @@ public class loginActivity extends Activity {
                                         }
                                     }
                                 });
-                                ///
-                                spreadmsg("데이터" + datastring);
-                                Intent listViewIntent = new Intent(getApplicationContext(), fl1.class);
-                                startActivity(listViewIntent);
-                                finish();
                             } else {
                                 spreadmsg("로그인이 실패적입니다.");
                                 if (task.getException() != null) {

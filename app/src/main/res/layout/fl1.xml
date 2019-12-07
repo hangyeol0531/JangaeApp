@@ -37,6 +37,18 @@
         </TableRow>
     </TableLayout>
 
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/nameline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"

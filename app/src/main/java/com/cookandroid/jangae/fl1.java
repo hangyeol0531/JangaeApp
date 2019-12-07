@@ -5,19 +5,28 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class fl1 extends AppCompatActivity {
 
     Button btn1, btn2, btn3;
+    TextView tv1;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fl1);
 
+        Intent intent = getIntent();
+        name = intent.getStringExtra("name");
+
         btn1 = (Button)findViewById(R.id.btn1);
         btn2 = (Button)findViewById(R.id.btn2);
         btn3 = (Button)findViewById(R.id.btn3);
+        tv1 = (TextView)findViewById(R.id.nameline);
+
+        tv1.setText(name + "님 환영합니다!!!");
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
