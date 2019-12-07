@@ -14,23 +14,22 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class loginActivity extends Activity {
     Button btn1, btn2;
     private static final String TAG = "login Activity";
     private FirebaseAuth mAuth;
+    private String datastring;
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.login);
         mAuth = FirebaseAuth.getInstance();
         findViewById(R.id.login).setOnClickListener(onClickListener);
-    }
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     }
     View.OnClickListener onClickListener = new View.OnClickListener(){
         @Override
@@ -55,8 +54,31 @@ public class loginActivity extends Activity {
                             if (task.isSuccessful()) {
                                 FirebaseUser user = mAuth.getCurrentUser();
                                 spreadmsg("로그인이 성공적입니다.");
+
+                                ///
+                                final FirebaseFirestore db = FirebaseFirestore.getInstance();
+                                final DocumentReference docRef = db.collection("users").document(user.getUid());
+                                docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                        if (task.isSuccessful()) {
+                                            DocumentSnapshot document = task.getResult();
+                                            if (document.exists()) {
+                                                Log.d(TAG, "DocumentSnapshot data: " + document.getData().get("position"));
+                                                //datastring = document.getData().getString("position");
+                                            } else {
+                                                Log.d(TAG, "No such document");
+                                            }
+                                        } else {
+                                            Log.d(TAG, "get failed with ", task.getException());
+                                        }
+                                    }
+                                });
+                                ///
+                                spreadmsg("데이터" + datastring);
                                 Intent listViewIntent = new Intent(getApplicationContext(), fl1.class);
                                 startActivity(listViewIntent);
+                                finish();
                             } else {
                                 spreadmsg("로그인이 실패적입니다.");
                                 if (task.getException() != null) {

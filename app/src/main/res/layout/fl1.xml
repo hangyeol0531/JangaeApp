@@ -57,23 +57,14 @@
             android:orientation="vertical"
             android:layout_marginBottom="215dp"
             >
+
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="320dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:src="@drawable/fs2"
-                />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="320dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="30dp"
-                android:background="#FFFFFF"
-                android:src="@drawable/chat1"
-                />
+                android:src="@drawable/fs2" />
 
 
         </LinearLayout>
