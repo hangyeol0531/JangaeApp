@@ -38,18 +38,18 @@
     </TableLayout>
 
     <TextView
-        android:layout_marginTop="10dp"
         android:id="@+id/nameline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textStyle="bold"
-        android:textSize="25dp"
+        android:layout_marginTop="10dp"
         android:background="#000000"
         android:textColor="#ffffff"
-        />
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <ImageView
+        android:onClick="onButton1Clicked"
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -58,7 +58,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="382dp"
         android:background="#93D6E6"
         android:orientation="vertical"
         >
@@ -71,6 +71,7 @@
             >
 
             <ImageView
+                android:onClick="onButton2Clicked"
                 android:id="@+id/imageView3"
                 android:layout_width="320dp"
                 android:layout_height="100dp"
@@ -96,7 +97,7 @@
             <Button
                 android:id="@+id/btn1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:background="#08BAD5"
                 android:text="홈"
@@ -121,7 +122,6 @@
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
                 />
-
             <Button
                 android:id="@+id/btn3"
                 android:layout_width="wrap_content"

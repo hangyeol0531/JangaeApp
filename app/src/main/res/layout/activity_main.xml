@@ -48,10 +48,10 @@
 
     </TableLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="로그인 건너뛰자"
-        android:id="@+id/jump"
-        />
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="로그인 건너뛰자"-->
+        <!--android:id="@+id/jump"-->
+        <!--/>-->
 </LinearLayout>

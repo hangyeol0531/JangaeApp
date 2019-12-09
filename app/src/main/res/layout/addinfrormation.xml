@@ -92,7 +92,6 @@
         android:ems="10"
         android:background="@drawable/round"
         android:hint="Call"
-        android:inputType="textPassword"
         android:textColorHint="#000000"
         android:textSize="30dp"
         />

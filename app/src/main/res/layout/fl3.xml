@@ -57,6 +57,7 @@
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
                 android:src="@drawable/fs2"
+                android:onClick="onButton2Clicked"
                 />
 
             <ImageView
@@ -66,6 +67,7 @@
                 android:layout_marginTop="30dp"
                 android:background="#FFFFFF"
                 android:src="@drawable/fs2"
+                android:onClick="onButton2Clicked"
                 />
 
             <ImageView
@@ -75,6 +77,7 @@
                 android:layout_marginTop="30dp"
                 android:background="#FFFFFF"
                 android:src="@drawable/fs2"
+                android:onClick="onButton2Clicked"
                 />
 
 
