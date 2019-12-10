@@ -69,7 +69,6 @@
             android:id="@+id/imageView7"
             android:layout_width="match_parent"
             android:layout_height="135dp"
-            android:onClick="onButton1Clicked"
             android:src="@drawable/pejang" />
 
         <ImageView

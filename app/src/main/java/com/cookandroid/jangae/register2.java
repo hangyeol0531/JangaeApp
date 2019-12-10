@@ -46,7 +46,7 @@ public class register2 extends Activity {
         String password = ((EditText)findViewById(R.id.pwEditText)).getText().toString().trim();
         String repassword = ((EditText)findViewById(R.id.repwEditText)).getText().toString().trim();
         if(password.length() > 0 && repassword.length() > 0 && email.length() > 0) {
-            if (password.equals(repassword)) {
+            if (password.equals(repassword) && (password.length()) >= 6 ) {
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                             @Override
@@ -71,7 +71,7 @@ public class register2 extends Activity {
                             }
                         });
             } else {
-                spreadmsg("비밀번호가 일치하지 않습니다.");
+                spreadmsg("비밀번호가 일치하지 않거나 6글자 이하입니다.");
             }
         }else{
             spreadmsg("값이 모두 입력되지 않았습니다");

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn1 = (Button)findViewById(R.id.login);
         btn2 = (Button)findViewById(R.id.register);
-        jump = (Button)findViewById(R.id.jump);
+        //jump = (Button)findViewById(R.id.);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        jump.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent listViewIntent = new Intent(getApplicationContext(), fl1.class);
-                startActivity(listViewIntent);
-            }
-        });
+//        jump.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent listViewIntent = new Intent(getApplicationContext(), fl1.class);
+//                startActivity(listViewIntent);
+//            }
+//        });
 
     }
 }
